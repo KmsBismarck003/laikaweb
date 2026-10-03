@@ -1,104 +1,91 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los valores de Laika Club: responsabilidad, compromiso, innovacion y seguridad como pilares de nuestra cultura organizacional.">
     <title>Valores | Laika Club</title>
+    <link rel="icon" type="image/x-icon" href="logos/icono.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
 </head>
 <body>
-    <div class="bg-container valores-bg"></div>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Laika Club Logo"></a>
-        </div>
-        <div class="hamburger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </div>
-    </header>
-
-    <div class="sidebar">
-        <div class="close-sidebar"><i class="fas fa-times"></i></div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="mision.html">MISIÓN</a>
-            <a href="vision.html">VISIÓN</a>
-            <a href="valores.html">VALORES</a>
-            <a href="objetivo.html">OBJETIVO</a>
-            <a href="fan.html">PARA EL FAN</a>
-            <a href="organizador.html">ORGANIZADOR</a>
-            <a href="documentacion.html">DOCUMENTACIÓN</a>
-            <a href="contacto.html">CONTACTO</a>
-        </nav>
-    </div>
+    <laika-header></laika-header>
+    <laika-sidebar></laika-sidebar>
 
     <main>
-        <div class="glass-card" style="text-align: center;">
-            <h2 class="sub-label animate-reveal">NUESTROS PILARES</h2>
-            <h1 class="animate-reveal delay-1">VALORES</h1>
-            <div class="content-grid animate-reveal delay-2">
-                <div class="feature-box">
-                    <h3>Responsabilidad</h3>
-                    <p>Cumplimos con excelencia cada compromiso adquirido con nuestros clientes.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Compromiso</h3>
-                    <p>Dedicación total para asegurar el éxito de cada evento gestionado.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Innovación</h3>
-                    <p>Búsqueda constante de mejores soluciones tecnológicas y creativas.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Seguridad</h3>
-                    <p>Protección absoluta de la información y los activos de nuestros usuarios.</p>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="label animate-reveal">Nuestros Pilares</span>
+                <h1 class="animate-reveal delay-1">Valores</h1>
+                <p class="lead animate-reveal delay-2">
+                    Los valores de Laika Club no son declaraciones de intención. Son los criterios que aplicamos en cada decisión, desde cómo desarrollamos el producto hasta cómo tratamos a nuestros usuarios.
+                </p>
+            </div>
+        </section>
+
+        <!-- EMPHASIS -->
+        <section class="emphasis-block">
+            <div class="container">
+                <p class="emphasis-text animate-reveal">
+                    Una empresa con <span class="highlight">valores claros</span> toma mejores decisiones, genera mayor confianza y construye productos que <span class="brand-word">perduran.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- VALUES GRID -->
+        <section class="section" style="border-bottom: 1px solid var(--bg-border);">
+            <div class="container">
+                <span class="label animate-reveal">Cuatro valores, una cultura</span>
+                <div class="pillar-grid animate-reveal delay-1">
+                    <div class="pillar">
+                        <div class="pillar-index">01</div>
+                        <h3>Responsabilidad</h3>
+                        <p>Cumplimos con excelencia cada compromiso adquirido con nuestros clientes y usuarios. La responsabilidad no es una postura, es el mínimo que nos exigimos.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">02</div>
+                        <h3>Compromiso</h3>
+                        <p>Dedicación total para asegurar el éxito de cada evento gestionado a través de nuestra plataforma. El compromiso no termina cuando el evento inicia, sino cuando el último asistente sale satisfecho.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">03</div>
+                        <h3>Innovación</h3>
+                        <p>Búsqueda constante de mejores soluciones tecnológicas y creativas. No nos conformamos con lo que funciona hoy si existe una manera de hacerlo mejor mañana.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">04</div>
+                        <h3>Seguridad</h3>
+                        <p>Protección absoluta de la información y los activos de nuestros usuarios. La confianza que depositan en nosotros se sostiene en sistemas robustos y protocolos rigurosos.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- STATEMENT -->
+        <section class="statement-section">
+            <div class="container">
+                <p class="statement-text animate-reveal">
+                    Estos valores no son independientes entre sí. <strong>La responsabilidad requiere compromiso. La innovación requiere seguridad. Y los cuatro juntos dan forma a una empresa en la que vale la pena confiar.</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- NAV BETWEEN PAGES -->
+        <section class="section-sm">
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
+                <a href="vision.html" class="btn btn-ghost"><i class="fas fa-arrow-left" style="margin-right:8px;font-size:0.8rem;"></i> Visión</a>
+                <a href="objetivo.html" class="btn btn-primary">Objetivo <i class="fas fa-arrow-right" style="margin-left:8px;font-size:0.8rem;"></i></a>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                    <img src="img/logo.png" alt="Logo" style="height: 38px;">
-                    <span style="font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; font-family: var(--font-accent);">LAIKA CLUB</span>
-                </div>
-                <p>Soporte Elite: 722 239 0967 | 722 798 4439<br>Email: laikaclub10@gmail.com</p>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Mapa del Sitio</h4>
-                <a href="index.html">INICIO</a>
-                <a href="mision.html">MISIÓN</a>
-                <a href="vision.html">VISIÓN</a>
-                <a href="valores.html">VALORES</a>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Síguenos</h4>
-                <div class="social-grid">
-                    <a href="https://www.instagram.com/laika__club" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/people/Laika-Club/61581326425324/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@laika_club" target="_blank"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-            <div class="footer-nav-col">
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.306059882!2d-99.6!3d19.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzAwLjAiTiA5OcKwMzYwMC4wIlc!5e0!3m2!1sen!2smx!4v1620000000000!5m2!1sen!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2026 LAIKA CLUB. TODOS LOS DERECHOS RESERVADOS.</p>
-            <p> REYES DE LA ROSA JOSÉ ÁNGEL | VAZQUEZ NAVA BRANDON</p>
-        </div>
-    </footer>
-
+    <laika-footer></laika-footer>
     <script src="js/script.js"></script>
 </body>
 </html>
-
-

@@ -1,108 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta al equipo de Laika Club. Soporte Elite disponible para organizadores y fans. Envianos tu consulta y te respondemos a la brevedad.">
     <title>Contacto | Laika Club</title>
+    <link rel="icon" type="image/x-icon" href="logos/icono.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
 </head>
 <body>
-    <div class="bg-container contact-bg"></div>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Laika Club Logo"></a>
-        </div>
-        <div class="hamburger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </div>
-    </header>
+    <laika-header></laika-header>
+    <laika-sidebar></laika-sidebar>
 
-    <div class="sidebar">
-        <div class="close-sidebar"><i class="fas fa-times"></i></div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="mision.html">MISIÓN</a>
-            <a href="vision.html">VISIÓN</a>
-            <a href="valores.html">VALORES</a>
-            <a href="objetivo.html">OBJETIVO</a>
-            <a href="fan.html">PARA EL FAN</a>
-            <a href="organizador.html">ORGANIZADOR</a>
-            <a href="documentacion.html">DOCUMENTACIÓN</a>
-            <a href="contacto.html">CONTACTO</a>
-        </nav>
-    </div    <main>
-        <div class="glass-card animate-reveal" style="text-align: center;">
-            <h2 class="sub-label animate-reveal">ESTAMOS PARA AYUDARTE</h2>
-            <h1 class="animate-reveal delay-1">CENTRO DE RECURSOS</h1>
-            <p class="lead-text animate-reveal delay-2" style="margin-bottom: 40px;">
-                ¿Necesitas una solución personalizada para tu evento de alto nivel? Nuestro equipo de expertos está listo para asesorarte.
-            </p>
+    <main>
 
-            <form class="contact-form animate-reveal delay-3" style="display: flex; flex-direction: column; gap: 24px; text-align: left;" onsubmit="event.preventDefault(); alert('Solicitud Elite enviada correctamente.');">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <label style="font-size: 0.7rem; letter-spacing: 3px; color: var(--text-sub); font-weight: 700; text-transform: uppercase;">NOMBRE</label>
-                        <input type="text" placeholder="Tu nombre" style="padding: 22px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 20px; color: white; font-family: var(--font-body); outline: none; transition: var(--transition-base);" onfocus="this.style.borderColor='var(--glass-border-bright)'; this.style.background='rgba(255,255,255,0.04)';" onblur="this.style.borderColor='var(--glass-border)'; this.style.background='rgba(255,255,255,0.02)';" required>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="label animate-reveal">Estamos Para Ayudarte</span>
+                <h1 class="animate-reveal delay-1">Contacto</h1>
+                <p class="lead animate-reveal delay-2">
+                    Tienes un evento en mente, una duda sobre la plataforma o necesitas soporte. Nuestro equipo esta disponible para atenderte.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT LAYOUT -->
+        <section>
+            <div class="container">
+                <div class="contact-layout">
+
+                    <!-- INFO COLUMN -->
+                    <div class="contact-info animate-reveal">
+
+                        <div class="contact-method">
+                            <span class="contact-method-label">Telefono</span>
+                            <a href="tel:7222390967" class="contact-method-value">722 239 0967</a>
+                            <a href="tel:7227984439" class="contact-method-value">722 798 4439</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <span class="contact-method-label">Correo electronico</span>
+                            <a href="mailto:laikaclub10@gmail.com" class="contact-method-value">laikaclub10@gmail.com</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <span class="contact-method-label">Redes sociales</span>
+                            <div style="display:flex; gap:12px; margin-top:8px;">
+                                <a href="https://www.instagram.com/laika__club" target="_blank" rel="noopener"
+                                   style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--bg-border);color:var(--text-muted);font-size:1rem;transition:var(--t-smooth);"
+                                   onmouseover="this.style.color='var(--brand)';this.style.borderColor='var(--brand)';"
+                                   onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='var(--bg-border)';"
+                                   aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/people/Laika-Club/61581326425324/" target="_blank" rel="noopener"
+                                   style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--bg-border);color:var(--text-muted);font-size:1rem;transition:var(--t-smooth);"
+                                   onmouseover="this.style.color='var(--brand)';this.style.borderColor='var(--brand)';"
+                                   onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='var(--bg-border)';"
+                                   aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@laika_club" target="_blank" rel="noopener"
+                                   style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--bg-border);color:var(--text-muted);font-size:1rem;transition:var(--t-smooth);"
+                                   onmouseover="this.style.color='var(--brand)';this.style.borderColor='var(--brand)';"
+                                   onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='var(--bg-border)';"
+                                   aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <span class="contact-method-label">Horario de atencion</span>
+                            <span class="contact-method-value" style="cursor:default;">Lunes a Viernes, 9:00 – 18:00</span>
+                            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Para eventos en curso, soporte disponible 24/7.</p>
+                        </div>
+
                     </div>
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <label style="font-size: 0.7rem; letter-spacing: 3px; color: var(--text-sub); font-weight: 700; text-transform: uppercase;">CORREO</label>
-                        <input type="email" placeholder="email@ejemplo.com" style="padding: 22px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 20px; color: white; font-family: var(--font-body); outline: none; transition: var(--transition-base);" onfocus="this.style.borderColor='var(--glass-border-bright)'; this.style.background='rgba(255,255,255,0.04)';" onblur="this.style.borderColor='var(--glass-border)'; this.style.background='rgba(255,255,255,0.02)';" required>
+
+                    <!-- FORM COLUMN -->
+                    <div class="animate-reveal delay-2">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="contact-name">Nombre</label>
+                                    <input type="text" id="contact-name" name="name" placeholder="Tu nombre completo" required autocomplete="name">
+                                </div>
+                                <div class="form-field">
+                                    <label for="contact-email">Correo electronico</label>
+                                    <input type="email" id="contact-email" name="email" placeholder="email@ejemplo.com" required autocomplete="email">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contact-subject">Asunto</label>
+                                <input type="text" id="contact-subject" name="subject" placeholder="Organizar un evento, soporte tecnico, informacion general..." required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contact-message">Mensaje</label>
+                                <textarea id="contact-message" name="message" rows="6" placeholder="Cuentanos mas sobre tu evento o consulta..." required></textarea>
+                            </div>
+
+                            <div style="padding-top: 8px;">
+                                <button type="submit" id="contact-submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                                    Enviar mensaje
+                                </button>
+                            </div>
+                        </form>
                     </div>
+
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <label style="font-size: 0.7rem; letter-spacing: 3px; color: var(--text-sub); font-weight: 700; text-transform: uppercase;">MENSAJE</label>
-                    <textarea rows="5" placeholder="Cuéntanos sobre tu evento..." style="padding: 22px; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 20px; color: white; font-family: var(--font-body); outline: none; transition: var(--transition-base); resize: none;" onfocus="this.style.borderColor='var(--glass-border-bright)'; this.style.background='rgba(255,255,255,0.04)';" onblur="this.style.borderColor='var(--glass-border)'; this.style.background='rgba(255,255,255,0.02)';" required></textarea>
-                </div>
-                <div style="margin-top: 15px; text-align: center;">
-                    <button type="submit" class="btn btn-solid" style="width: 100%; max-width: 400px;">ENVIAR CONSULTA ELITE</button>
-                </div>
-            </form>
-        </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                    <img src="img/logo.png" alt="Logo" style="height: 38px;">
-                    <span style="font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; font-family: var(--font-accent);">LAIKA CLUB</span>
-                </div>
-                <p>Soporte Elite: 722 239 0967 | 722 798 4439<br>Email: laikaclub10@gmail.com</p>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Mapa del Sitio</h4>
-                <a href="index.html">INICIO</a>
-                <a href="mision.html">MISIÓN</a>
-                <a href="vision.html">VISIÓN</a>
-                <a href="valores.html">VALORES</a>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Síguenos</h4>
-                <div class="social-grid">
-                    <a href="https://www.instagram.com/laika__club" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/people/Laika-Club/61581326425324/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@laika_club" target="_blank"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-            <div class="footer-nav-col">
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.306059882!2d-99.6!3d19.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzAwLjAiTiA5OcKwMzYwMC4wIlc!5e0!3m2!1sen!2smx!4v1620000000000!5m2!1sen!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2026 LAIKA CLUB. TODOS LOS DERECHOS RESERVADOS.</p>
-            <p> REYES DE LA ROSA JOSÉ ÁNGEL | VAZQUEZ NAVA BRANDON</p>
-        </div>
-    </footer>
-   </footer>
-
+    <laika-footer></laika-footer>
     <script src="js/script.js"></script>
 </body>
 </html>
-
-

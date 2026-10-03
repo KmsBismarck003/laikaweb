@@ -1,90 +1,96 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La visión de Laika Club: consolidarse como una de las mejores plataformas de gestión de eventos del mercado, destacando por calidad e innovación tecnológica.">
     <title>Visión | Laika Club</title>
+    <link rel="icon" type="image/x-icon" href="logos/icono.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
 </head>
 <body>
-    <div class="bg-container vision-bg"></div>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Laika Club Logo"></a>
-        </div>
-        <div class="hamburger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </div>
-    </header>
-
-    <div class="sidebar">
-        <div class="close-sidebar"><i class="fas fa-times"></i></div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="mision.html">MISIÓN</a>
-            <a href="vision.html">VISIÓN</a>
-            <a href="valores.html">VALORES</a>
-            <a href="objetivo.html">OBJETIVO</a>
-            <a href="fan.html">PARA EL FAN</a>
-            <a href="organizador.html">ORGANIZADOR</a>
-            <a href="documentacion.html">DOCUMENTACIÓN</a>
-            <a href="contacto.html">CONTACTO</a>
-        </nav>
-    </div>
+    <laika-header></laika-header>
+    <laika-sidebar></laika-sidebar>
 
     <main>
-        <div class="glass-card" style="text-align: center;">
-            <h2 class="sub-label animate-reveal">NUESTRO HORIZONTE</h2>
-            <h1 class="animate-reveal delay-1">VISIÓN</h1>
-            <p class="lead-text animate-reveal delay-2" style="font-size: 1.8rem; line-height: 1.4; margin-top: 30px;">
-                Consolidarse como una de las mejores plataformas del mercado, destacando por su calidad e innovación tecnológica.
-            </p>
 
-        </div>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="label animate-reveal">Nuestro Horizonte</span>
+                <h1 class="animate-reveal delay-1">Visión</h1>
+                <p class="lead animate-reveal delay-2">
+                    Consolidarse como una de las mejores plataformas de gestión de eventos del mercado, destacando por su calidad e innovación tecnológica.
+                </p>
+            </div>
+        </section>
+
+        <!-- EMPHASIS BLOCK -->
+        <section class="emphasis-block">
+            <div class="container">
+                <p class="emphasis-text animate-reveal">
+                    No aspiramos únicamente a estar presentes en el mercado. Aspiramos a <span class="highlight">definir el estándar</span> de lo que una plataforma de gestión de eventos debe ser capaz de hacer.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTENT SPLIT -->
+        <section class="content-split">
+            <div class="content-split-left animate-reveal">
+                <span class="label">Hacia dónde vamos</span>
+                <hr class="rule-brand">
+                <p style="margin-top:12px; font-size:0.9rem; color:var(--text-muted);">Nuestra visión no es una declaración aspiracional. Es la dirección que guía cada decisión que tomamos.</p>
+            </div>
+            <div class="content-split-right animate-reveal delay-2">
+                <p>El sector del entretenimiento y la gestión de eventos está experimentando una transformación tecnológica acelerada. Las plataformas que sobrevivan y lideren este cambio serán aquellas capaces de combinar robustez técnica con una experiencia de usuario excepcional.</p>
+                <p>Laika Club está construida con esa perspectiva. Cada función que desarrollamos, cada mejora que implementamos y cada problema que resolvemos está orientado a construir una plataforma que sea reconocida por su calidad, no solo por su presencia en el mercado.</p>
+                <p>Nuestra visión implica también una responsabilidad: ser una empresa que crece sin comprometer la integridad de su producto ni la confianza de quienes depositan en ella su evento o su experiencia como fan.</p>
+            </div>
+        </section>
+
+        <!-- VISION PILLARS -->
+        <section class="section" style="border-bottom: 1px solid var(--bg-border);">
+            <div class="container">
+                <span class="label animate-reveal">Fundamentos de nuestra visión</span>
+                <div class="pillar-grid animate-reveal delay-1">
+                    <div class="pillar">
+                        <div class="pillar-index">01</div>
+                        <h3>Liderazgo tecnológico</h3>
+                        <p>Mantenernos a la vanguardia de las tecnologías que permiten una gestión de eventos más inteligente, segura y eficiente.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">02</div>
+                        <h3>Referencia de calidad</h3>
+                        <p>Ser la plataforma que organizadores y fans mencionan como estándar de excelencia en su categoría.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">03</div>
+                        <h3>Crecimiento sostenible</h3>
+                        <p>Expandir nuestra presencia sin sacrificar la calidad del producto ni la atención personalizada que nos distingue.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">04</div>
+                        <h3>Innovación continua</h3>
+                        <p>Evolucionar constantemente en respuesta a las necesidades del mercado y las posibilidades que ofrece la tecnología.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAV BETWEEN PAGES -->
+        <section class="section-sm">
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
+                <a href="mision.html" class="btn btn-ghost"><i class="fas fa-arrow-left" style="margin-right:8px;font-size:0.8rem;"></i> Misión</a>
+                <a href="valores.html" class="btn btn-primary">Valores <i class="fas fa-arrow-right" style="margin-left:8px;font-size:0.8rem;"></i></a>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                    <img src="img/logo.png" alt="Logo" style="height: 38px;">
-                    <span style="font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; font-family: var(--font-accent);">LAIKA CLUB</span>
-                </div>
-                <p>Soporte Elite: 722 239 0967 | 722 798 4439<br>Email: laikaclub10@gmail.com</p>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Mapa del Sitio</h4>
-                <a href="index.html">INICIO</a>
-                <a href="mision.html">MISIÓN</a>
-                <a href="vision.html">VISIÓN</a>
-                <a href="valores.html">VALORES</a>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Síguenos</h4>
-                <div class="social-grid">
-                    <a href="https://www.instagram.com/laika__club" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/people/Laika-Club/61581326425324/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@laika_club" target="_blank"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-            <div class="footer-nav-col">
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.306059882!2d-99.6!3d19.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzAwLjAiTiA5OcKwMzYwMC4wIlc!5e0!3m2!1sen!2smx!4v1620000000000!5m2!1sen!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2026 LAIKA CLUB. TODOS LOS DERECHOS RESERVADOS.</p>
-            <p> REYES DE LA ROSA JOSÉ ÁNGEL | VAZQUEZ NAVA BRANDON</p>
-        </div>
-    </footer>
-
+    <laika-footer></laika-footer>
     <script src="js/script.js"></script>
 </body>
 </html>
-
-

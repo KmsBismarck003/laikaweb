@@ -1,110 +1,168 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laika Club | Elite Event Management</title>
+    <meta name="description" content="Laika Club — Sistema integral de gestión y venta de boletos. Tecnología de vanguardia para la creación, administración y distribución segura de eventos.">
+    <title>Laika Club | Sistema Integral de Gestión de Eventos</title>
+    <link rel="icon" type="image/x-icon" href="logos/icono.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
 </head>
 <body>
-    <div class="bg-container home-bg"></div>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Laika Club Logo"></a>
-        </div>
-        <div class="hamburger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </div>
-    </header>
-
-    <div class="sidebar">
-        <div class="close-sidebar"><i class="fas fa-times"></i></div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="mision.html">MISIÓN</a>
-            <a href="vision.html">VISIÓN</a>
-            <a href="valores.html">VALORES</a>
-            <a href="objetivo.html">OBJETIVO</a>
-            <a href="fan.html">PARA EL FAN</a>
-            <a href="organizador.html">ORGANIZADOR</a>
-            <a href="documentacion.html">DOCUMENTACIÓN</a>
-            <a href="contacto.html">CONTACTO</a>
-        </nav>
-    </div>
+    <laika-header></laika-header>
+    <laika-sidebar></laika-sidebar>
 
     <main>
-        <section class="hero-logo-container">
-            <img src="img/logo.png" alt="Laika Club Logo" class="hero-logo">
+
+        <!-- HERO -->
+        <section class="hero container">
+            <div class="hero-eyebrow animate-reveal">
+                <span class="label">Sistema Integral de Gestión</span>
+                <div class="hero-eyebrow-line"></div>
+            </div>
+
+            <h1 class="hero-title animate-reveal delay-1">
+                Gestión de eventos<br><em>sin fricciones.</em>
+            </h1>
+
+            <div class="hero-body animate-reveal delay-2">
+                <p>Laika Club es el ecosistema tecnológico que conecta organizadores y fans a través de una plataforma segura, eficiente y completamente digital.</p>
+            </div>
+
+            <div class="hero-ctas animate-reveal delay-3">
+                <a href="mision.html" class="btn btn-primary">Conocer la plataforma</a>
+                <a href="contacto.html" class="btn btn-ghost">Hablar con el equipo</a>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
         </section>
 
-        <div class="glass-card" style="text-align: center;">
-            <h2 class="sub-label animate-reveal">SISTEMA INTEGRAL DE GESTIÓN</h2>
-            <h1 class="animate-reveal delay-1">SOMOS LAIKA CLUB</h1>
-            <p class="lead-text animate-reveal delay-2">
-                El ecosistema definitivo para la <strong>gestión inteligente de eventos</strong>.
-                Donde la tecnología de vanguardia se une con la seguridad absoluta para crear experiencias inolvidables.
-            </p>
-
-            <div class="btn-group animate-reveal delay-3">
-                <a href="mision.html" class="btn btn-solid">CONÓCENOS</a>
-                <a href="contacto.html" class="btn btn-outline">SOPORTE ELITE</a>
-            </div>
-
-            <div class="content-grid animate-reveal delay-4">
-                <div class="feature-box">
-                    <h3>Visión Tecnológica</h3>
-                    <p>Optimización total del ciclo de vida del evento mediante algoritmos de gestión en tiempo real.</p>
+        <!-- METRICS BAND -->
+        <div class="metrics-band animate-reveal delay-4">
+            <div class="container">
+                <div class="metric-item">
+                    <div class="metric-number">100<span>%</span></div>
+                    <div class="metric-label">Digital y sin papel</div>
                 </div>
-                <div class="feature-box">
-                    <h3>Seguridad Blindada</h3>
-                    <p>Cifrado de última generación y validación biométrica para garantizar la integridad institucional.</p>
+                <div class="metric-item">
+                    <div class="metric-number">0</div>
+                    <div class="metric-label">Tolerancia al fraude</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">24<span>/7</span></div>
+                    <div class="metric-label">Soporte Elite</div>
                 </div>
             </div>
         </div>
+
+        <!-- ABOUT SPLIT -->
+        <section class="split-section">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-left">
+                        <div class="section-tag">
+                            <span class="label">Quiénes Somos</span>
+                        </div>
+                        <h2>Una plataforma construida con propósito.</h2>
+                        <hr class="rule-brand">
+                        <div style="margin-top: 24px;">
+                            <a href="mision.html" class="btn btn-ghost">Ver nuestra misión <i class="fas fa-arrow-right" style="margin-left:8px;font-size:0.8rem;"></i></a>
+                        </div>
+                    </div>
+                    <div class="split-right">
+                        <p>Laika Club nace de la convicción de que la tecnología puede transformar la manera en que las personas disfrutan y organizan experiencias. Somos una empresa mexicana especializada en soluciones digitales para la gestión integral de eventos.</p>
+                        <p>Nuestra plataforma cubre todo el ciclo de vida del evento: desde su creación y configuración, hasta la venta de boletos, control de acceso y análisis en tiempo real.</p>
+                        <p>Trabajamos con la misma seriedad que exigen los eventos de alto nivel, garantizando a organizadores el control total de su operación y a los fans una experiencia de compra confiable, rápida y libre de fraudes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-header">
+                    <h2>Lo que ofrecemos</h2>
+                    <a href="organizador.html" class="btn btn-ghost">Ver todo <i class="fas fa-arrow-right" style="margin-left:6px;font-size:0.8rem;"></i></a>
+                </div>
+
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="service-num">01</div>
+                        <div class="service-body">
+                            <h3>Creación y configuración de eventos</h3>
+                            <p>Panel intuitivo para definir fechas, categorías, aforos y precios con total flexibilidad.</p>
+                        </div>
+                        <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-num">02</div>
+                        <div class="service-body">
+                            <h3>Venta y distribución de boletos</h3>
+                            <p>Sistema de compra digital con generación automática de boletos únicos y seguros.</p>
+                        </div>
+                        <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-num">03</div>
+                        <div class="service-body">
+                            <h3>Validación y control de acceso</h3>
+                            <p>Verificación en tiempo real mediante códigos dinámicos. Cero fraudes, cero falsificaciones.</p>
+                        </div>
+                        <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-num">04</div>
+                        <div class="service-body">
+                            <h3>Análisis y reportes en tiempo real</h3>
+                            <p>Dashboards con métricas de ventas, comportamiento de usuario y proyecciones del evento.</p>
+                        </div>
+                        <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-num">05</div>
+                        <div class="service-body">
+                            <h3>Soporte Elite 24/7</h3>
+                            <p>Equipo dedicado disponible antes, durante y después de cada evento para cualquier incidencia.</p>
+                        </div>
+                        <div class="service-arrow"><i class="fas fa-arrow-up-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATEMENT -->
+        <section class="statement-section">
+            <div class="container">
+                <p class="statement-text">
+                    Creemos que <strong>la tecnología bien aplicada elimina las barreras</strong> entre un organizador y su audiencia. Cada boleto vendido a través de Laika Club es una garantía de que la experiencia comenzó bien antes de que las puertas abran.
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="section" style="border-bottom: 1px solid var(--bg-border);">
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:32px;">
+                <div>
+                    <span class="label">¿Tienes un evento?</span>
+                    <h2 style="margin-top:16px; max-width:480px;">Trabajemos juntos.</h2>
+                </div>
+                <div class="btn-group">
+                    <a href="contacto.html" class="btn btn-primary">Contactar ahora</a>
+                    <a href="documentacion.html" class="btn btn-ghost">Ver documentación</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                    <img src="img/logo.png" alt="Logo" style="height: 38px;">
-                    <span style="font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; font-family: var(--font-accent);">LAIKA CLUB</span>
-                </div>
-                <p>Soporte Elite: 722 239 0967 | 722 798 4439<br>Email: laikaclub10@gmail.com</p>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Mapa del Sitio</h4>
-                <a href="index.html">INICIO</a>
-                <a href="mision.html">MISIÓN</a>
-                <a href="vision.html">VISIÓN</a>
-                <a href="valores.html">VALORES</a>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Síguenos</h4>
-                <div class="social-grid">
-                    <a href="https://www.instagram.com/laika__club" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/people/Laika-Club/61581326425324/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@laika_club" target="_blank"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-            <div class="footer-nav-col">
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.306059882!2d-99.6!3d19.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzAwLjAiTiA5OcKwMzYwMC4wIlc!5e0!3m2!1sen!2smx!4v1620000000000!5m2!1sen!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2026 LAIKA CLUB. TODOS LOS DERECHOS RESERVADOS.</p>
-            <p> REYES DE LA ROSA JOSÉ ÁNGEL | VAZQUEZ NAVA BRANDON</p>
-        </div>
-    </footer>
-
+    <laika-footer></laika-footer>
     <script src="js/script.js"></script>
 </body>
 </html>
-
-

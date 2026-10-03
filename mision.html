@@ -1,90 +1,96 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La misión de Laika Club: ofrecer un sistema integral que permita la creación, administración y venta de boletos de forma segura y eficiente.">
     <title>Misión | Laika Club</title>
+    <link rel="icon" type="image/x-icon" href="logos/icono.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
 </head>
 <body>
-    <div class="bg-container mision-bg"></div>
 
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Laika Club Logo"></a>
-        </div>
-        <div class="hamburger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </div>
-    </header>
-
-    <div class="sidebar">
-        <div class="close-sidebar"><i class="fas fa-times"></i></div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="mision.html">MISIÓN</a>
-            <a href="vision.html">VISIÓN</a>
-            <a href="valores.html">VALORES</a>
-            <a href="objetivo.html">OBJETIVO</a>
-            <a href="fan.html">PARA EL FAN</a>
-            <a href="organizador.html">ORGANIZADOR</a>
-            <a href="documentacion.html">DOCUMENTACIÓN</a>
-            <a href="contacto.html">CONTACTO</a>
-        </nav>
-    </div>
+    <laika-header></laika-header>
+    <laika-sidebar></laika-sidebar>
 
     <main>
-        <div class="glass-card" style="text-align: center;">
-            <h2 class="sub-label animate-reveal">NUESTRO PROPÓSITO</h2>
-            <h1 class="animate-reveal delay-1">MISIÓN</h1>
-            <p class="lead-text animate-reveal delay-2" style="font-size: 1.8rem; line-height: 1.4; margin-top: 30px;">
-                Ofrecer un sistema integral que permita la creación, administración y venta de boletos de forma segura y eficiente, optimizando todo el ciclo de vida del evento.
-            </p>
 
-        </div>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="label animate-reveal">Nuestro Propósito</span>
+                <h1 class="animate-reveal delay-1">Misión</h1>
+                <p class="lead animate-reveal delay-2">
+                    Ofrecer un sistema integral que permita la creación, administración y venta de boletos de forma segura y eficiente, optimizando todo el ciclo de vida del evento.
+                </p>
+            </div>
+        </section>
+
+        <!-- EMPHASIS BLOCK -->
+        <section class="emphasis-block">
+            <div class="container">
+                <p class="emphasis-text animate-reveal">
+                    Cada evento que gestionamos representa una <span class="highlight">promesa cumplida</span> entre el organizador y su audiencia. Nuestra misión es que esa promesa sea posible gracias a <span class="brand-word">tecnología confiable.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTENT SPLIT -->
+        <section class="content-split">
+            <div class="content-split-left animate-reveal">
+                <span class="label">Cómo lo hacemos</span>
+                <hr class="rule-brand">
+                <p style="margin-top:12px; font-size:0.9rem; color:var(--text-muted);">Nuestro sistema cubre cada etapa del evento, desde su concepción hasta el cierre operativo.</p>
+            </div>
+            <div class="content-split-right animate-reveal delay-2">
+                <p>Diseñamos nuestra plataforma para que el proceso de gestión de eventos deje de ser un obstáculo y se convierta en una ventaja competitiva. Esto significa que tanto el organizador más experimentado como el que está produciendo su primer evento encuentren en Laika Club una herramienta clara, potente y a su medida.</p>
+                <p>La venta de boletos debe ser un proceso confiable, sin fricciones y completamente digital. El fan debe poder adquirir su acceso en segundos, con la certeza de que su boleto es válido y seguro. El organizador debe tener visibilidad total de su operación en todo momento.</p>
+                <p>Cumplir esta misión requiere un compromiso constante con la calidad técnica, la seguridad de los datos y la experiencia de usuario. Es el estándar que nos imponemos en cada decisión de diseño y desarrollo.</p>
+            </div>
+        </section>
+
+        <!-- PILLARS OF MISSION -->
+        <section class="section" style="border-bottom: 1px solid var(--bg-border);">
+            <div class="container">
+                <span class="label animate-reveal">Ejes de nuestra misión</span>
+                <div class="pillar-grid animate-reveal delay-1">
+                    <div class="pillar">
+                        <div class="pillar-index">01</div>
+                        <h3>Seguridad</h3>
+                        <p>Cada boleto generado cuenta con identificación única y verificación criptográfica que imposibilita su falsificación.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">02</div>
+                        <h3>Eficiencia</h3>
+                        <p>Reducimos el tiempo y la complejidad operativa de cualquier evento, desde la configuración inicial hasta el cierre.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">03</div>
+                        <h3>Digitalización</h3>
+                        <p>Eliminamos el papel, las filas y la incertidumbre. Todo el ciclo del evento vive en una plataforma accesible desde cualquier dispositivo.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-index">04</div>
+                        <h3>Confianza</h3>
+                        <p>Organizadores y fans confían en Laika Club porque el sistema cumple lo que promete. Sin sorpresas, sin errores críticos, sin margen para el fraude.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAV BETWEEN PAGES -->
+        <section class="section-sm">
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
+                <a href="index.html" class="btn btn-ghost"><i class="fas fa-arrow-left" style="margin-right:8px;font-size:0.8rem;"></i> Inicio</a>
+                <a href="vision.html" class="btn btn-primary">Visión <i class="fas fa-arrow-right" style="margin-left:8px;font-size:0.8rem;"></i></a>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-info">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                    <img src="img/logo.png" alt="Logo" style="height: 38px;">
-                    <span style="font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; font-family: var(--font-accent);">LAIKA CLUB</span>
-                </div>
-                <p>Soporte Elite: 722 239 0967 | 722 798 4439<br>Email: laikaclub10@gmail.com</p>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Mapa del Sitio</h4>
-                <a href="index.html">INICIO</a>
-                <a href="mision.html">MISIÓN</a>
-                <a href="vision.html">VISIÓN</a>
-                <a href="valores.html">VALORES</a>
-            </div>
-            <div class="footer-nav-col">
-                <h4>Síguenos</h4>
-                <div class="social-grid">
-                    <a href="https://www.instagram.com/laika__club" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/people/Laika-Club/61581326425324/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@laika_club" target="_blank"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-            <div class="footer-nav-col">
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.306059882!2d-99.6!3d19.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEyJzAwLjAiTiA5OcKwMzYwMC4wIlc!5e0!3m2!1sen!2smx!4v1620000000000!5m2!1sen!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2026 LAIKA CLUB. TODOS LOS DERECHOS RESERVADOS.</p>
-            <p> REYES DE LA ROSA JOSÉ ÁNGEL | VAZQUEZ NAVA BRANDON</p>
-        </div>
-    </footer>
-
+    <laika-footer></laika-footer>
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
